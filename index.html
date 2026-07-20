@@ -125,7 +125,7 @@
 
         // SORT: Highest score to lowest
         rows.sort((a, b) => {
-            return parseInt(b.getAttribute('data-score')) - parseInt(a.getAttribute('data-score'));
+            return parseFloat(b.getAttribute('data-score')) - parseFloat(a.getAttribute('data-score'));
         });
 
         // RE-ORDER & ASSIGN NUMBERS
